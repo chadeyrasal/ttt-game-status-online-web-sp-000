@@ -19,7 +19,9 @@ def won?(board)
 end
 
 def full?(board)
-  board.all?{|index| position_taken?(board, index) == true}
+  board.all? do |position|
+    position == "X" || position == "O"
+  end
 end
 
 def draw?(board)
