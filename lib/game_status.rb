@@ -11,7 +11,7 @@ def won?(board)
     if position_taken?(board, win_combination[0]) == true && (board[win_combination[0]] == board[win_combination[1]] && board[win_combination[0]] == board[win_combination[2]])
       return win_combination
     else
-      false
+      return false
     end
   end
 end
