@@ -18,6 +18,7 @@ def won?(board)
       false
     end
   end
+  false
 end
 
 def full?(board)
