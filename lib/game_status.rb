@@ -19,7 +19,7 @@ def won?(board)
 end
 
 def full?(board)
-  (board[index] == "X" || board[index] == "O")
+  board.all?{|index| (board[index] == "X" || board[index] == "O")}
 end
 
 def draw?(board)
